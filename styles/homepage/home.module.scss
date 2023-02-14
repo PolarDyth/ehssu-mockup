@@ -16,13 +16,18 @@ nav {
             justify-content: space-between;
             align-items: center;
             padding: 0 2rem;
-            height: 5rem;
+            height: 6rem;
             background-color: var(--background-color);
             .nav-left {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
+                .logo-link {
+                    .logo {
+                        padding: 10px 0;
+                    }
+                }
                 a {
                     margin-left: 10rem;
                 }
@@ -34,6 +39,8 @@ nav {
                 justify-content: space-between;
                 align-items: center;
                 ul {
+                    padding: 0;
+                    margin: 0;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
@@ -42,6 +49,7 @@ nav {
                         margin-right: 10rem;
                         margin-left: 10rem;
                         a {
+                            margin: 0;
                             text-decoration: none;
                             color: white;
                             background: #257CFF;
@@ -51,7 +59,7 @@ nav {
                             font-weight: 400;
                             transition: 0.1s ease;
                             &:hover {
-                                color: var(--off-black);
+                                background: var(--dark-main-color);
                             }
                     }
                     }
@@ -104,14 +112,14 @@ header {
                 a {
                     text-decoration: none;
                     color: white;
-                    background: #257CFF;
+                    background: var(--main-color);
                     padding: 0.8rem 1.5rem;
                     border-radius: 9rem;
                     font-size: 1.2rem;
                     font-weight: 400;
                     transition: 0.1s ease;
                     &:hover {
-                        color: var(--off-black);
+                        background: var(--dark-main-color);
                     }
                 }
             }
@@ -271,7 +279,7 @@ header {
                 font-weight: 400;
                 transition: 0.1s ease;
                 &:hover {
-                    color: var(--off-black);
+                    background: var(--dark-main-color);
                 }
             }
         }
@@ -364,6 +372,7 @@ header {
                 gap: 10px;
                 margin-bottom: 20px;
                 margin-top: 1rem;
+                transition: 0.5s ease;
                 a {
                     color: white;
                     text-decoration: none;
@@ -372,10 +381,11 @@ header {
                     font-size: 16px;
                     line-height: 24px;
                     transition: 0.5s ease;
-                    &:hover {
-                        color: var(--off-black);
-                    }
+                    
                 }
+                &:hover {
+                        background: var(--dark-main-color);
+                    }
             }
         }
     }
@@ -387,6 +397,7 @@ header {
     grid-template-columns: 0.5fr 1fr;
     position: relative;
     margin: 150px;
+    cursor: pointer;
 
     .left {
         max-width: 400px;
@@ -497,10 +508,6 @@ footer {
         grid-template-columns: 1fr 2fr;
         // perfectly center grid items
         .footer-left {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             margin: 0 0 50px 15%;
             .footer-logo {
                 margin: 0;
@@ -528,6 +535,7 @@ footer {
                 margin: 0;
                 padding: 0;
                 .social-media-icon {
+                    margin: 0;
                     width: 48px;
                     height: 48px;
                     padding: 0.35em 1em;
@@ -554,7 +562,73 @@ footer {
         .footer-right {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            margin: 0 15% 50px 0;
+            max-width: 1500px;
+            gap: 21px;
+            margin: 0 7.5% 50px 0;
+            list-style: none;
+            h3 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 36px;
+                letter-spacing: 0.02em;
+            }
+            .quick-links {
+                max-width: 200px;
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 16px;
+                    li {
+                        list-style: none;
+                        gap: 16px;
+                        a {
+                            text-decoration: none;
+                            color: rgba(22, 16, 13, 0.5);
+                        }
+                    }
+                }
+            }
+            .community {
+                max-width: 200px;
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 16px;
+                    li {
+                        list-style: none;
+                        gap: 16px;
+                        a {
+                            text-decoration: none;
+                            color: rgba(22, 16, 13, 0.5);
+                        }
+                    }
+                }
+            }
+            .support {
+                max-width: 200px;
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 16px;
+                    li {
+                        list-style: none;
+                        gap: 16px;
+                        a {
+                            text-decoration: none;
+                            color: rgba(22, 16, 13, 0.5);
+                        }
+                    }
+                }
+            }
         }
     }
     .seperator {
