@@ -332,7 +332,7 @@ header {
                 position: relative;
                 justify-content: center;
                 align-items: center;
-                margin: 0 30px;
+                margin: 0 auto;
                 max-width: 349px;
                 h1 {
                     font-weight: 900;
@@ -374,6 +374,113 @@ header {
                     &:hover {
                         color: var(--off-black);
                     }
+                }
+            }
+        }
+    }
+}
+
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    position: relative;
+    margin: 150px;
+
+    .left {
+        max-width: 400px;
+        max-height: 600px;
+        background: white;
+        box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.04), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185);
+        border-radius: 20px;
+        .contents {
+            .stars {
+                user-select: none;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 3.57px;
+                position: relative;
+                justify-content: center;
+                margin: 30px 80px;
+                .star {
+                    fill: var(--main-color);
+                    width: 35.7px;
+                    height: 35.7px;
+                }
+            }
+
+            .text {
+                justify-content: center;
+                text-align: center;
+                .top-p {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: rgba(22, 16, 13, 0.5);
+                    margin: 0 30px;
+                    
+                }
+
+                h3 {
+                    margin-top: 30px;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 36px;
+                }
+
+                .location {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+
+                    color: rgba(22, 16, 13, 0.5);
+                }
+            }
+
+            .image {
+                display: flex;
+                justify-content: center;
+                margin: 20px 0 30px;
+                .face {
+                    background-image: url(/images/DBS_Tamara.jpg);
+                    background-size: 75px 75px;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+
+    .right {
+        .contents {
+            .text {
+                h1 {
+                    font-weight: 900;
+                    font-size: 40px;
+                    line-height: 60px;
+                }
+
+                .testimonial {
+                    display: none;
+                    transition: 0.5s ease;
+                }
+                
+
+            }
+
+            .buttons {
+                a {
+                    text-decoration: none;
+                    &:hover .arrow-button {
+                        fill-opacity: 1;
+                    }
+                }
+                user-select: none;
+                .arrow-button {
+                    cursor: pointer;
+                    fill-opacity:0.7;
+                    
+                    transition: 0.5s ease;
                 }
             }
         }

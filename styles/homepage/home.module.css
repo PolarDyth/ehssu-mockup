@@ -304,7 +304,7 @@ header .hero .hero-content-right .rating:hover {
   position: relative;
   justify-content: center;
   align-items: center;
-  margin: 0 30px;
+  margin: 0 auto;
   max-width: 349px;
 }
 .news-feed-desktop .feed .article .text h1 {
@@ -346,6 +346,91 @@ header .hero .hero-content-right .rating:hover {
 }
 .news-feed-desktop .feed .article .button a:hover {
   color: var(--off-black);
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  position: relative;
+  margin: 150px;
+}
+.testimonials .left {
+  max-width: 400px;
+  max-height: 600px;
+  background: white;
+  box-shadow: 0px 50px 100px rgba(0, 0, 0, 0.04), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185);
+  border-radius: 20px;
+}
+.testimonials .left .contents .stars {
+  user-select: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 3.57px;
+  position: relative;
+  justify-content: center;
+  margin: 30px 80px;
+}
+.testimonials .left .contents .stars .star {
+  fill: var(--main-color);
+  width: 35.7px;
+  height: 35.7px;
+}
+.testimonials .left .contents .text {
+  justify-content: center;
+  text-align: center;
+}
+.testimonials .left .contents .text .top-p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: rgba(22, 16, 13, 0.5);
+  margin: 0 30px;
+}
+.testimonials .left .contents .text h3 {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+.testimonials .left .contents .text .location {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(22, 16, 13, 0.5);
+}
+.testimonials .left .contents .image {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 30px;
+}
+.testimonials .left .contents .image .face {
+  background-image: url(/images/DBS_Tamara.jpg);
+  background-size: 75px 75px;
+  border-radius: 50px;
+}
+.testimonials .right .contents .text h1 {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 60px;
+}
+.testimonials .right .contents .text .testimonial {
+  display: none;
+  transition: 0.5s ease;
+}
+.testimonials .right .contents .buttons {
+  user-select: none;
+}
+.testimonials .right .contents .buttons a {
+  text-decoration: none;
+}
+.testimonials .right .contents .buttons a:hover .arrow-button {
+  fill-opacity: 1;
+}
+.testimonials .right .contents .buttons .arrow-button {
+  cursor: pointer;
+  fill-opacity: 0.7;
+  transition: 0.5s ease;
 }
 
 /*# sourceMappingURL=home.module.css.map */
